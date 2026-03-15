@@ -1,4 +1,5 @@
 #include "catch.hpp"
+
 #include "Hero.h"
 #include "Warrior.h"
 #include "Knight.h"
