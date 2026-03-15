@@ -20,6 +20,13 @@ myGuild+=h3;
 //Test damage
 h1->takeDamage(20);
 h2->takeDamage(10);
+
+//Test vitality operator 
+int vitality=*h1+*h3;
+cout<<"Combined Vitality: "<<vitality<<endl;
+cout<<endl;
+cout<<myGuild;
+myGuild.displayGuildStats();
 //Test comparison operator
 
 if (*h2>*h1){
@@ -28,12 +35,6 @@ if (*h2>*h1){
 else{
     cout<<h1->getName()<<" is stronger than "<<h2->getName()<<endl;
 }
-//Test vitality operator 
-int vitality=*h1+*h3;
-cout<<"Combined Vitality: "<<vitality<<endl;
-cout<<endl;
-cout<<myGuild;
-//displayGuildStats();
 
 
     return 0;

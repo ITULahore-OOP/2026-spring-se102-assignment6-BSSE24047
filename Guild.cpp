@@ -23,14 +23,10 @@ int Guild::calculateTotalGuildPower()const {
     return totalPower;
 }
 void Guild::displayGuildStats()const {
-    //  cout<<"-----Guild Stats-----"<<endl;
-    // for (int i=0;i<memberCount;i++){
-    // cout<<"Hero Name: "<<roster[i]->getName()<<endl;
-    // cout<<"Health: "<<roster[i]->getHealth()<<endl;
-    // }
     cout<<"Guild Name: "<<guildName<<endl;
     cout<<"Total Members: "<<memberCount<<"/15"<<endl;
     cout<<"Total Guild Power: "<<calculateTotalGuildPower()<<endl;
+    
     }
 void Guild:: operator+=(Hero* newHero){
     if (memberCount<15){
