@@ -42,11 +42,6 @@ void Guild:: operator+=(Hero* newHero){
     }
 }
 ostream& operator << (ostream& os, Guild& g){
-    // os<<"Guild Name: "<<g.guildName<<endl;
-    // for (int i=0; i<g.memberCount ;i++){
-    //     os<<"Hero: "<<g.roster[i]->getName()<<" | Power: "<<g.roster[i]->getPower()<<endl;
-    // }
-    // return os;
     os<<"Guild: "<<g.guildName<<endl;
     os<<"Members: "<<g.memberCount<<endl;
     for(int i=0;i<g.memberCount;i++){
